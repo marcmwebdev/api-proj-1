@@ -5,5 +5,7 @@ body
 form(action='submit', method='POST')
       p
       div
-        | Suggestion for sandwich: 
-        input(name='title', value='', type='text')
+        form(action='/suggestion', method='POST')
+          label Please make a suggestion: 
+            input(type='text', name='suggestion')
+            button(type='submit') Submit

@@ -27,9 +27,14 @@ app.get('/suggestion', (req, res) => {
 });
 
 app.post('/suggestion', (req, res) => {
-res.render('suggestion')
-res.status(201).send('Added Suggestion');
+  res.render('suggestion');
+  res.send('Added Suggestion');
 });
+
+// app.post('/suggestion', (req, res) => {
+// res.render('suggestion')
+// res.status(201).send('Added Suggestion');
+// });
 
 
 app.listen(port, () => {
